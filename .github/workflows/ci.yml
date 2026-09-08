@@ -1,0 +1,48 @@
+name: CI
+
+# The same gate developers run locally. `pnpm verify` is typecheck + lint + build + the export
+# check, so a page missing from the sitemap fails here instead of shipping unnoticed.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      # Inlined into the bundle at build time, exactly as the Dockerfile does it, so the sitemap
+      # CI builds is the sitemap production serves.
+      NEXT_PUBLIC_SITE_URL: https://mariovalney.com
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # Colours belong in src/styles/globals.css, plus THEME_COLOR in src/lib/site.ts, which a
+      # browser meta tag demands as a literal. A site drifts one loose hex at a time and the drift
+      # is only visible once it is everywhere, so the pipeline refuses them instead of review.
+      - name: No colour literals outside the token file
+        run: |
+          if grep -rnE '#([0-9a-fA-F]{8}|[0-9a-fA-F]{6}|[0-9a-fA-F]{4}|[0-9a-fA-F]{3})\b' src \
+               --include='*.ts' --include='*.tsx' --include='*.css' \
+             | grep -v '^src/styles/globals.css:' \
+             | grep -v '^src/lib/site.ts:'; then
+            echo "Move the colour above into src/styles/globals.css and use the token."
+            exit 1
+          fi
+
+      - run: pnpm verify

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mário Valney">
+  <!--
+    Placeholder mark, so the browser tab is not an empty page icon and /favicon.ico does not 404.
+    Replace it with the real logo, or drop a favicon.ico and an icon.png beside this file and
+    delete it. The fills are the accent and its foreground from src/styles/globals.css, repeated
+    here because an SVG asset cannot read a CSS custom property; the media query keeps the mark
+    legible on a dark tab strip, and browsers that ignore it fall back to the light values.
+  -->
+  <style>
+    .mark-bg { fill: #18181b; }
+    .mark-fg { fill: #fafafa; }
+    @media (prefers-color-scheme: dark) {
+      .mark-bg { fill: #ebebef; }
+      .mark-fg { fill: #0b0b0d; }
+    }
+  </style>
+  <rect class="mark-bg" width="64" height="64" rx="14" />
+  <path class="mark-fg" d="M18 44V20h7.5l6.5 12 6.5-12H46v24h-7V32.5L33 44h-2l-6-11.5V44z" />
+</svg>
