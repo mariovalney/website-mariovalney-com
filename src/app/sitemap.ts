@@ -8,7 +8,7 @@ export const dynamic = 'force-static'
 /**
  * sitemap.xml, built from the routes that exist on disk.
  *
- * Dynamic routes ([slug]) are not discoverable from folder names — add them here, from the same
+ * Dynamic routes ([slug]) are not discoverable from folder names, add them here, from the same
  * source generateStaticParams uses, so the two can never disagree.
  */
 export default function sitemap(): MetadataRoute.Sitemap {

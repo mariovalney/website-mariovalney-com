@@ -3,7 +3,7 @@
  * Post-build assertions on out/.
  *
  * `next build` succeeding says the code compiles, not that the site is publishable. The failure
- * this catches most often is a page that exists but is missing from sitemap.xml — nothing breaks,
+ * this catches most often is a page that exists but is missing from sitemap.xml, nothing breaks,
  * the page simply never gets indexed, and nobody notices for months. Comparing the exported HTML
  * against the sitemap makes that a build error instead.
  */

@@ -2,7 +2,7 @@
 
 # Production image: Next builds the site to static files, nginx serves them.
 #
-# Three stages, so the runtime image carries no Node, no toolchain and no dependencies — only
+# Three stages, so the runtime image carries no Node, no toolchain and no dependencies, only
 # the exported HTML. It is what Easypanel builds from this repository. See docs/DEPLOY.md.
 
 # ---------------------------------------------------------------------------
@@ -45,7 +45,7 @@ RUN pnpm build && pnpm check:export
 FROM nginxinc/nginx-unprivileged:stable-alpine AS runner
 
 # This image already runs as a non-root user, which is why it listens on 8080 and not 80.
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx/ /etc/nginx/conf.d/
 COPY --from=builder /app/out /usr/share/nginx/html
 
 EXPOSE 8080
