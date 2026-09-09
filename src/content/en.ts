@@ -10,13 +10,14 @@ export const en: SiteContent = {
   meta: {
     title: 'Mário Valney',
     description:
-      'Developer for more than ten years, working across engineering, product and operations. WordPress contributor since 2012.',
+      'Founder and Head of IT. More than ten years between writing software and answering for the teams and the operation that keep it running.',
   },
 
   hero: {
     name: 'Mário Valney',
     role: 'Founder and Head of IT',
-    tagline: 'I build software that solves real problems, and have done so for over ten years.',
+    tagline:
+      'I lead engineering and product without letting go of the technical side. Over ten years delivering value on both ends.',
   },
 
   about: {
@@ -127,6 +128,5 @@ export const en: SiteContent = {
     navLabel: 'Page sections',
     skipToContent: 'Skip to content',
     languageSwitch: 'Ler esta página em português',
-    footer: 'Built with Next.js and served as static HTML.',
   },
 }

@@ -36,6 +36,8 @@ function resolveSiteUrl(): string {
 export const SITE = {
   name: 'Mário Valney',
   url: resolveSiteUrl(),
+  /** First year of the copyright range in the footer. The second is the build year. */
+  copyrightFrom: 1992,
 } as const
 
 /**

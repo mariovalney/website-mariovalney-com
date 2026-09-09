@@ -4,7 +4,7 @@ import { SiteNav } from '@/components/site-nav'
 import { Container } from '@/components/ui/container'
 import { SocialIcon } from '@/components/ui/social-icon'
 import type { Section, SiteContent } from '@/content/types'
-import { LOCALES, otherLocale } from '@/lib/site'
+import { LOCALES, otherLocale, SITE } from '@/lib/site'
 
 /**
  * The whole page, for either language. The two routes differ only in the dictionary they hand in,
@@ -143,10 +143,10 @@ export function Portfolio({ content }: { content: SiteContent }) {
           </SectionShell>
 
           <footer className="max-w-md pb-16 text-sm text-fg-muted lg:pb-24">
-            <p>{content.ui.footer}</p>
-            <p className="mt-2">
-              © {new Date().getFullYear()} {content.hero.name}
-            </p>
+            {/* One template string rather than four expressions, so React emits a single text
+                node instead of splitting it with <!-- --> separators. The closing year is the
+                build year, which moves on every deploy. */}
+            <p>{`${SITE.copyrightFrom}-${new Date().getFullYear()} © ${content.hero.name}`}</p>
           </footer>
         </main>
       </div>
