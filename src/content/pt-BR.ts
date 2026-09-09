@@ -11,23 +11,24 @@ export const ptBR: SiteContent = {
   meta: {
     title: 'Mário Valney',
     description:
-      'Desenvolvedor há mais de dez anos, entre engenharia, produto e operação. Contribuo com o WordPress desde 2012.',
+      'Fundador e Head de TI. Mais de dez anos entre escrever software e responder pelos times e pela operação que o sustentam.',
   },
 
   hero: {
     name: 'Mário Valney',
-    role: 'Fundador e desenvolvedor',
-    tagline: 'Crio software para resolver problemas reais. Faço isso há mais de dez anos.',
+    role: 'Fundador e Head de TI',
+    tagline: 'Lidero engenharia sem largar o código. São mais de dez anos entre as duas coisas.',
   },
 
   about: {
     id: 'sobre',
     heading: 'Sobre',
     paragraphs: [
-      'Software é mais que código. Ele existe para atender uma necessidade e resolver um problema, e é com essa cabeça que trabalho há mais de dez anos.',
-      'Produto é feito, gerido e usado por pessoas. Entender quem está envolvido costuma pesar tanto quanto a decisão técnica, e foi o que aprendi liderando times de desenvolvimento e, depois, uma operação de TI inteira.',
-      'Contribuo com o WordPress desde 2012: código no core, tradução, suporte e palestra em WordCamp. Os plugins que publiquei rodam hoje em dezenas de milhares de sites.',
-      'Também sou piloto privado. Voar cobra trabalho sob pressão, gestão de risco, planejamento e comunicação clara, e nada disso fica no hangar.',
+      'Software é mais que código. Ele existe para atender uma necessidade e resolver um problema, e é essa leitura que sustenta tanto escrever o sistema quanto decidir o que vale construir.',
+      'Comecei escrevendo código e passei a responder pelo conjunto: de dois a três times de desenvolvimento ao mesmo tempo, com escopo, prazo e orçamento, e depois a operação de TI inteira. Produto é feito, gerido e usado por pessoas, e entender quem está envolvido pesa tanto quanto a decisão técnica.',
+      'Decisão técnica que ignora custo é meia decisão. Fui atrás da outra metade: gestão estratégica de TI na FGV, gerência de projetos alinhada ao PMI, e matemática financeira, contabilidade e análise de viabilidade econômica de projetos na Saint Paul.',
+      'Continuo com a mão na massa. Contribuo com o WordPress desde 2012, com código aceito no core, e hoje curso pós em engenharia de software para IA aplicada.',
+      'Também sou piloto privado. Voar é trabalhar sob pressão, gerir risco, planejar e comunicar com clareza, e nada disso fica no hangar.',
     ],
   },
 
@@ -38,19 +39,23 @@ export const ptBR: SiteContent = {
       {
         period: 'jul 2026 até agora',
         title: 'Fundador',
-        description: [
-          'Produto próprio, do código à operação. O foco é usar IA no trabalho que hoje é feito na mão.',
-        ],
-        tags: ['Produto', 'IA', 'Operações'],
+        description: ['Em construção.'],
+        tags: [],
       },
       {
         period: 'out 2021 - jul 2026',
         title: 'IT Manager',
         company: 'Fortesec',
         description: [
-          'Operação de TI, liderança do time de desenvolvimento e gestão dos projetos da área, em São Paulo.',
+          'Responsável pela operação de TI e pelo time de desenvolvimento, em São Paulo, por quase cinco anos: pessoas, prioridades e os projetos da área.',
         ],
-        tags: ['Operações de TI', 'Liderança', 'Gestão de projetos', 'IA'],
+        tags: [
+          'Liderança de time',
+          'Operações de TI',
+          'Gestão de projetos',
+          'Desenvolvimento de software',
+          'IA',
+        ],
       },
       {
         period: 'set 2016 - set 2021',
@@ -60,11 +65,19 @@ export const ptBR: SiteContent = {
           { role: 'Software Engineer', period: 'set 2016 - mai 2020' },
         ],
         description: [
-          'De dois a três times de desenvolvimento ao mesmo tempo, cuidando de escopo, prazo e orçamento. Acumulei product owner, refinando e descobrindo funcionalidade junto com o cliente.',
+          'De dois a três times de desenvolvimento ao mesmo tempo, respondendo por escopo, prazo e orçamento. Acumulei product owner, refinando e descobrindo funcionalidade junto com o cliente.',
           'Antes disso, quase quatro anos como desenvolvedor fullstack, com Docker, AWS, Terraform, Magento e WordPress, em Java, PHP, TypeScript, JavaScript e Ruby.',
           'Entre os clientes: Avon (Natura &Co), Onyx Card e Grupo JCPM.',
         ],
-        tags: ['Gestão de projetos', 'Product owner', 'PHP', 'TypeScript', 'AWS', 'Docker'],
+        tags: [
+          'Gestão de projetos',
+          'Product owner',
+          'Métodos ágeis',
+          'PHP',
+          'TypeScript',
+          'AWS',
+          'Docker',
+        ],
       },
       {
         period: 'jul 2013 - jun 2015',
@@ -104,21 +117,6 @@ export const ptBR: SiteContent = {
           'Código aceito no core e creditado nas versões 4.7, 4.9, 5.1 e 5.5. Junto disso, tradução, suporte e palestra em WordCamp desde 2012.',
         url: 'https://profiles.wordpress.org/mariovalney/',
         tags: ['Open source', 'WordPress'],
-      },
-      {
-        name: 'HTML Template for CF7',
-        metric: 'mil instalações ativas',
-        description:
-          'Troca o e-mail em texto puro do Contact Form 7 por um template HTML que dá para editar.',
-        url: 'https://wordpress.org/plugins/html-template-for-cf7/',
-        tags: ['WordPress', 'PHP'],
-      },
-      {
-        name: 'payload-simple-social-login',
-        description:
-          'Login social com Google e Microsoft para a autenticação padrão do Payload CMS.',
-        url: 'https://github.com/mariovalney/payload-simple-social-login',
-        tags: ['TypeScript', 'Payload CMS'],
       },
     ],
   },

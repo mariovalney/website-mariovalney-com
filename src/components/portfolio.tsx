@@ -20,9 +20,12 @@ export function Portfolio({ content }: { content: SiteContent }) {
 
   return (
     <Container width="wide" className="relative min-h-dvh py-12 md:px-12 md:py-16 lg:py-0">
+      {/* Hidden until it has keyboard focus. Not moved off screen with a transform: this sits in a
+          centred container, so shifting it by its own width still leaves it visible on a wide
+          viewport. sr-only does not depend on where the element happens to be. */}
       <a
         href="#content"
-        className="absolute top-0 left-0 z-50 block -translate-x-full rounded-md bg-accent px-4 py-3 text-sm font-bold tracking-widest text-accent-fg uppercase focus-visible:translate-x-0"
+        className="sr-only focus-visible:not-sr-only focus-visible:absolute focus-visible:top-4 focus-visible:left-4 focus-visible:z-50 focus-visible:rounded-md focus-visible:bg-accent focus-visible:px-4 focus-visible:py-3 focus-visible:text-sm focus-visible:font-bold focus-visible:tracking-widest focus-visible:text-accent-fg focus-visible:uppercase"
       >
         {content.ui.skipToContent}
       </a>

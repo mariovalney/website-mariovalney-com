@@ -15,7 +15,7 @@ export const en: SiteContent = {
 
   hero: {
     name: 'Mário Valney',
-    role: 'Founder and developer',
+    role: 'Founder and Head of IT',
     tagline: 'I build software that solves real problems, and have done so for over ten years.',
   },
 
@@ -23,10 +23,11 @@ export const en: SiteContent = {
     id: 'about',
     heading: 'About',
     paragraphs: [
-      'Software is more than code. It exists to meet a need and solve a problem, and that is how I have worked for more than ten years.',
-      'Products are built, managed and used by people. Understanding everyone involved tends to weigh as much as the technical call, which is what I learned leading development teams and later an entire IT operation.',
-      'I have contributed to WordPress since 2012: core code, translations, support and WordCamp talks. The plugins I published run on tens of thousands of sites today.',
-      'I am also a private pilot. Flying demands working under pressure, managing risk, planning and communicating clearly, and none of that stays at the airfield.',
+      'Software is more than code. It exists to meet a need and solve a problem, and that reading is what carries through both writing the system and deciding what is worth building.',
+      'I started by writing code and moved on to answering for the whole: two to three development teams at once, with scope, schedule and budget, and later an entire IT operation. Products are built, managed and used by people, and understanding everyone involved weighs as much as the technical call.',
+      'A technical decision that ignores cost is half a decision. I went after the other half: strategic IT management at FGV, PMI-aligned project management, and financial mathematics, accounting and economic feasibility analysis of investment projects at Saint Paul.',
+      'I am still hands on. I have contributed to WordPress since 2012, with code merged into core, and I am currently taking a postgraduate degree in software engineering for applied AI.',
+      'I am also a private pilot. Flying is working under pressure, managing risk, planning and communicating clearly, and none of that stays at the airfield.',
     ],
   },
 
@@ -37,19 +38,23 @@ export const en: SiteContent = {
       {
         period: 'Jul 2026 to now',
         title: 'Founder',
-        description: [
-          'My own product, from the code to the operation. The focus is putting AI on work that is still done by hand.',
-        ],
-        tags: ['Product', 'AI', 'Operations'],
+        description: ['Under construction.'],
+        tags: [],
       },
       {
         period: 'Oct 2021 - Jul 2026',
         title: 'IT Manager',
         company: 'Fortesec',
         description: [
-          'IT operations, leadership of the development team and management of the area projects, in São Paulo.',
+          'Answerable for the IT operation and the development team, in São Paulo, for close to five years: people, priorities and the projects of the area.',
         ],
-        tags: ['IT operations', 'Leadership', 'Project management', 'AI'],
+        tags: [
+          'Team leadership',
+          'IT operations',
+          'Project management',
+          'Software development',
+          'AI',
+        ],
       },
       {
         period: 'Sep 2016 - Sep 2021',
@@ -59,11 +64,19 @@ export const en: SiteContent = {
           { role: 'Software Engineer', period: 'Sep 2016 - May 2020' },
         ],
         description: [
-          'Two to three development teams at once, holding scope, schedule and budget. I doubled as product owner, refining and discovering features alongside the client.',
+          'Two to three development teams at once, answering for scope, schedule and budget. I doubled as product owner, refining and discovering features alongside the client.',
           'Before that, close to four years as a fullstack developer with Docker, AWS, Terraform, Magento and WordPress, in Java, PHP, TypeScript, JavaScript and Ruby.',
           'Clients included Avon (Natura &Co), Onyx Card and Grupo JCPM.',
         ],
-        tags: ['Project management', 'Product owner', 'PHP', 'TypeScript', 'AWS', 'Docker'],
+        tags: [
+          'Project management',
+          'Product owner',
+          'Agile',
+          'PHP',
+          'TypeScript',
+          'AWS',
+          'Docker',
+        ],
       },
       {
         period: 'Jul 2013 - Jun 2015',
@@ -101,21 +114,6 @@ export const en: SiteContent = {
           'Code merged into core and credited in 4.7, 4.9, 5.1 and 5.5. Alongside it, translation, support and WordCamp talks since 2012.',
         url: 'https://profiles.wordpress.org/mariovalney/',
         tags: ['Open source', 'WordPress'],
-      },
-      {
-        name: 'HTML Template for CF7',
-        metric: '1,000 active installs',
-        description:
-          'Replaces the plain text email Contact Form 7 sends with an HTML template you can edit.',
-        url: 'https://wordpress.org/plugins/html-template-for-cf7/',
-        tags: ['WordPress', 'PHP'],
-      },
-      {
-        name: 'payload-simple-social-login',
-        description:
-          'Google and Microsoft social login for the default Payload CMS authentication.',
-        url: 'https://github.com/mariovalney/payload-simple-social-login',
-        tags: ['TypeScript', 'Payload CMS'],
       },
     ],
   },

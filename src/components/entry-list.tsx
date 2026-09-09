@@ -27,6 +27,8 @@ export function EntryRow({ period, children }: { period: string; children: React
 }
 
 export function TagList({ tags }: { tags: string[] }) {
+  if (tags.length === 0) return null
+
   return (
     <ul className="mt-3 flex flex-wrap gap-2">
       {tags.map((tag) => (
