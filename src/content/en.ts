@@ -27,7 +27,7 @@ export const en: SiteContent = {
       'I started by writing code and moved on to answering for the whole: two to three development teams at once, with scope, schedule and budget, and later an entire IT operation. Products are built, managed and used by people, and understanding everyone involved weighs as much as the technical call.',
       'A technical decision that ignores cost is half a decision. I went after the other half: strategic IT management at FGV, PMI-aligned project management, and financial mathematics, accounting and economic feasibility analysis of investment projects at Saint Paul.',
       'I am still hands on. I have contributed to WordPress since 2012, with code merged into core, and I am currently taking a postgraduate degree in software engineering for applied AI.',
-      'I am also a private pilot. Flying demands working under pressure, managing risk, planning and communicating clearly, and none of that stays at the airfield.',
+      'I am also a private pilot. Flying is working under pressure, managing risk, planning and communicating clearly, and none of that stays at the airfield.',
     ],
   },
 

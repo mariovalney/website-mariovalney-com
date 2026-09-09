@@ -28,7 +28,7 @@ export const ptBR: SiteContent = {
       'Comecei escrevendo código e passei a responder pelo conjunto: de dois a três times de desenvolvimento ao mesmo tempo, com escopo, prazo e orçamento, e depois a operação de TI inteira. Produto é feito, gerido e usado por pessoas, e entender quem está envolvido pesa tanto quanto a decisão técnica.',
       'Decisão técnica que ignora custo é meia decisão. Fui atrás da outra metade: gestão estratégica de TI na FGV, gerência de projetos alinhada ao PMI, e matemática financeira, contabilidade e análise de viabilidade econômica de projetos na Saint Paul.',
       'Continuo com a mão na massa. Contribuo com o WordPress desde 2012, com código aceito no core, e hoje curso pós em engenharia de software para IA aplicada.',
-      'Também sou piloto privado. Voar cobra trabalho sob pressão, gestão de risco, planejamento e comunicação clara, e nada disso fica no hangar.',
+      'Também sou piloto privado. Voar é trabalhar sob pressão, gerir risco, planejar e comunicar com clareza, e nada disso fica no hangar.',
     ],
   },
 
