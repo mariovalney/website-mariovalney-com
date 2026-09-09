@@ -17,7 +17,8 @@ export const ptBR: SiteContent = {
   hero: {
     name: 'Mário Valney',
     role: 'Fundador e Head de TI',
-    tagline: 'Lidero engenharia sem largar o código. São mais de dez anos entre as duas coisas.',
+    tagline:
+      'Lidero engenharia e produto sem abandonar a abordagem técnica. São mais de dez anos entregando valor nas duas pontas.',
   },
 
   about: {
@@ -130,6 +131,5 @@ export const ptBR: SiteContent = {
     navLabel: 'Seções desta página',
     skipToContent: 'Ir direto ao conteúdo',
     languageSwitch: 'Read this page in English',
-    footer: 'Feito em Next.js e servido como HTML estático.',
   },
 }

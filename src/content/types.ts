@@ -58,6 +58,5 @@ export interface SiteContent {
     navLabel: string
     /** Accessible name of the link to the other language. */
     languageSwitch: string
-    footer: string
   }
 }
