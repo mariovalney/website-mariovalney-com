@@ -1,0 +1,59 @@
+# Addresses the blog published between 2013 and 2019, and where each one goes now.
+#
+# Read by nginx (an include inside a map block in default.conf) and by scripts/preview.mjs, so the
+# local preview redirects exactly like production. One list, two consumers, no drift.
+#
+# Keys carry no trailing slash on purpose: default.conf normalises /foo/ to /foo in the rewrite
+# phase, before any of this is consulted, so a key with a slash would never match.
+
+# The archive, at https://legacy.valney.dev.
+/a-pasta-res-e-os-resources-em-um-projeto-android                             https://legacy.valney.dev/blog/a-pasta-res-e-os-resources-em-um-projeto-android;
+/afinal-o-que-e-ux-user-experience                                            https://legacy.valney.dev/blog/afinal-o-que-e-ux-user-experience;
+/aula-1-getting-start                                                         https://legacy.valney.dev/blog/aula-1-getting-start;
+/aula-10-como-mudar-de-activity-com-intents                                   https://legacy.valney.dev/blog/aula-10-como-mudar-de-activity-com-intents;
+/aula-2-como-instalar-o-android-studio                                        https://legacy.valney.dev/blog/aula-2-como-instalar-o-android-studio;
+/aula-3-5-criando-o-seu-projeto-nas-novas-versoes-do-android-studio           https://legacy.valney.dev/blog/aula-3-5-criando-o-seu-projeto-nas-novas-versoes-do-android-studio;
+/aula-3-como-criar-um-projeto-no-android-studio                               https://legacy.valney.dev/blog/aula-3-como-criar-um-projeto-no-android-studio;
+/aula-4-o-que-e-activity-e-fragment                                           https://legacy.valney.dev/blog/aula-4-o-que-e-activity-e-fragment;
+/aula-5-como-criar-a-user-interface-ui-do-meu-aplicativo-android              https://legacy.valney.dev/blog/aula-5-como-criar-a-user-interface-ui-do-meu-aplicativo-android;
+/aula-6-como-escrever-o-layout-da-minha-aplicacao                             https://legacy.valney.dev/blog/aula-6-como-escrever-o-layout-da-minha-aplicacao;
+/aula-7-design-responsivo-para-aplicativos                                    https://legacy.valney.dev/blog/aula-7-design-responsivo-para-aplicativos;
+/aula-8-como-conectar-meu-aplicativo-a-nuvem                                  https://legacy.valney.dev/blog/aula-8-como-conectar-meu-aplicativo-a-nuvem;
+/aula-9-o-que-e-um-wireframe-e-como-criar-a-navegacao-do-meu-app              https://legacy.valney.dev/blog/aula-9-o-que-e-um-wireframe-e-como-criar-a-navegacao-do-meu-app;
+/como-alterar-as-mensagens-de-atualizacao-de-post-do-wordpress                https://legacy.valney.dev/blog/como-alterar-as-mensagens-de-atualizacao-de-post-do-wordpress;
+/como-apagar-linhas-vazias-no-sublime-text-2                                  https://legacy.valney.dev/blog/como-apagar-linhas-vazias-no-sublime-text-2;
+/como-comecar-com-o-wordpress                                                 https://legacy.valney.dev/blog/como-comecar-com-o-wordpress;
+/como-conectar-seu-dispositivo-ao-android-studio-usando-wi-fi                 https://legacy.valney.dev/blog/como-conectar-seu-dispositivo-ao-android-studio-usando-wi-fi;
+/como-criar-extensoes-do-google-chrome                                        https://legacy.valney.dev/blog/como-criar-extensoes-do-google-chrome;
+/como-criar-um-tema-filho-child-theme-para-wordpress                          https://legacy.valney.dev/blog/como-criar-um-tema-filho-child-theme-para-wordpress;
+/como-deixar-seu-site-mais-seguro-com-https-ssl-e-cloudflare                  https://legacy.valney.dev/blog/como-deixar-seu-site-mais-seguro-com-https-ssl-e-cloudflare;
+/como-remover-o-autocomplete-do-campo-de-nova-senha-no-chrome                 https://legacy.valney.dev/blog/como-remover-o-autocomplete-do-campo-de-nova-senha-no-chrome;
+/como-trabalhar-com-wordpress-em-equipe-usando-mysql-remoto-e-git             https://legacy.valney.dev/blog/como-trabalhar-com-wordpress-em-equipe-usando-mysql-remoto-e-git;
+/como-usar-cookies-com-javascript                                             https://legacy.valney.dev/blog/como-usar-cookies-com-javascript;
+/como-usar-imagens-em-diferentes-tamanhos-nos-temas-wordpress                 https://legacy.valney.dev/blog/como-usar-imagens-em-diferentes-tamanhos-nos-temas-wordpress;
+/conectando-o-contact-form-7-ao-zapier                                        https://legacy.valney.dev/blog/conectando-o-contact-form-7-ao-zapier;
+/embaixador-do-google-sim                                                     https://legacy.valney.dev/blog/embaixador-do-google-sim;
+/guia-de-sobrevivencia-para-designers                                         https://legacy.valney.dev/blog/guia-de-sobrevivencia-para-designers;
+/hyperdb-duas-instalacoes-do-wordpress-utilizando-a-mesma-tabela-de-usuarios  https://legacy.valney.dev/blog/hyperdb-duas-instalacoes-do-wordpress-utilizando-a-mesma-tabela-de-usuarios;
+/palestra-3o-encontro-php-com-rapadura                                        https://legacy.valney.dev/blog/palestra-3o-encontro-php-com-rapadura;
+/palestra-introducao-ao-marketing-online-com-as-ferramentas-do-google         https://legacy.valney.dev/blog/palestra-introducao-ao-marketing-online-com-as-ferramentas-do-google;
+/palestra-wordcamp-fortaleza-2016                                             https://legacy.valney.dev/blog/palestra-wordcamp-fortaleza-2016;
+/wcsp2018                                                                     https://legacy.valney.dev/blog/wcsp2018;
+/wordpress-pedindo-senha-do-ftp-em-localhost-no-linux                         https://legacy.valney.dev/blog/wordpress-pedindo-senha-do-ftp-em-localhost-no-linux;
+/portfolio/book-trailer-e-site-jairo-sarfati                                  https://legacy.valney.dev/portfolio/book-trailer-e-site-jairo-sarfati;
+/portfolio/diario-de-um-exorcista                                             https://legacy.valney.dev/portfolio/diario-de-um-exorcista;
+/portfolio/especial-midias-no-samba                                           https://legacy.valney.dev/portfolio/especial-midias-no-samba;
+/portfolio/festival-halleluya                                                 https://legacy.valney.dev/portfolio/festival-halleluya;
+/portfolio/hotsites-o-povo                                                    https://legacy.valney.dev/portfolio/hotsites-o-povo;
+/portfolio/mafalda-morfina                                                    https://legacy.valney.dev/portfolio/mafalda-morfina;
+/portfolio/site-achg                                                          https://legacy.valney.dev/portfolio/site-achg;
+/portfolio/site-euescrevo                                                     https://legacy.valney.dev/portfolio/site-euescrevo;
+/android                                                                      https://legacy.valney.dev/blog/categorias/google/curso-de-android;
+/categorias/android                                                           https://legacy.valney.dev/blog/categorias/google/android;
+/categorias/curso-de-android                                                  https://legacy.valney.dev/blog/categorias/google/curso-de-android;
+
+# Institutional pages this site answers itself. /me is the address the LinkedIn profile
+# publishes, so it points at the about section rather than being declared gone. The value is
+# quoted because an unquoted # opens a comment in nginx config.
+/sobre  "/#sobre";
+/me     "/#sobre";

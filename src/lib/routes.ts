@@ -5,7 +5,7 @@ import { join } from 'node:path'
  * Route discovery for the sitemap.
  *
  * A hand-maintained list of URLs goes stale on the first page somebody adds in a hurry, and
- * nothing fails when it does — the page simply never gets indexed. Reading the App Router tree
+ * nothing fails when it does, the page simply never gets indexed. Reading the App Router tree
  * from disk removes the human step: if the page exists, it is in the sitemap.
  *
  * This runs while `next build` renders sitemap.xml, in Node, with the repository on disk. It is
@@ -18,12 +18,12 @@ const PAGE_FILES = ['page.tsx', 'page.ts', 'page.jsx', 'page.js', 'page.mdx']
 
 /** Segments the App Router does not turn into URL segments, plus the ones we cannot enumerate. */
 function classify(segment: string): 'transparent' | 'skip' | 'segment' {
-  // (marketing) — route group: affects layout, not the URL.
+  // (marketing), route group: affects layout, not the URL.
   if (segment.startsWith('(') && segment.endsWith(')')) return 'transparent'
-  // _components, @modal, api — private folders, parallel routes, and handlers that a static
+  // _components, @modal, api, private folders, parallel routes, and handlers that a static
   // export does not serve as pages.
   if (segment.startsWith('_') || segment.startsWith('@') || segment === 'api') return 'skip'
-  // [slug] — the value set lives in generateStaticParams, not in the folder name. Declare those
+  // [slug], the value set lives in generateStaticParams, not in the folder name. Declare those
   // routes explicitly in src/app/sitemap.ts; see references/seo.md in the starter skill.
   if (segment.startsWith('[')) return 'skip'
   return 'segment'

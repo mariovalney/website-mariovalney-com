@@ -1,0 +1,15 @@
+# Category, tag and pagination addresses, by shape rather than one by one. Consulted only after
+# legacy-redirects.map misses, which is what lets /categorias/android reach its alias instead of
+# being swallowed here.
+#
+# The capture is named because $1 does not survive inside an nginx map. scripts/preview.mjs reads
+# the same file and rewrites $name to $<name> for JavaScript.
+
+~^/categorias$              https://legacy.valney.dev/blog/categorias;
+~^/categorias/(?<cat>.+)$   https://legacy.valney.dev/blog/categorias/$cat;
+~^/tags$                    https://legacy.valney.dev/blog/tags;
+~^/tags/(?<tag>.+)$         https://legacy.valney.dev/blog/tags/$tag;
+~^/page/[0-9]+$             https://legacy.valney.dev/;
+
+# The document also listed ^/?$ to the archive root. It is deliberately absent: this domain's root
+# is the site you are looking at, and that rule would send every visitor to the old blog.

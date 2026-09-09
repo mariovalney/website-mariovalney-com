@@ -1,0 +1,42 @@
+# Addresses that were not migrated to the archive. They answer 410, which tells a crawler the
+# content is deliberately gone and gets it dropped from the index faster than a 404 does.
+#
+# Same key convention as legacy-redirects.map: no trailing slash.
+
+/3-ano-de-vizir                                                                                               1;
+/calma-ainda-nao-e-o-apocalipse-mobile                                                                        1;
+/commitando-sobre-git                                                                                         1;
+/como-colocar-o-login-do-google-no-meu-site                                                                   1;
+/como-criar-um-site-responsivo-e-com-o-material-design-do-google-usando-o-materialize                         1;
+/como-instalar-o-xampp-no-linux                                                                               1;
+/como-usar-o-odin-no-meu-tema                                                                                 1;
+/facebook-compra-a-oculus-vr                                                                                  1;
+/feliz-natal-galera                                                                                           1;
+/google-classroom-a-novidade-no-google-for-education                                                          1;
+/google-esta-testando-uma-funcionalidade-que-permite-voce-falar-com-um-medico-quando-procurar-por-um-sintoma  1;
+/google-glass-bradesco-sai-na-frente-e-lanca-aplicativo-inedito                                               1;
+/google-lanca-um-novo-recurso-as-colecoes-ou-collections                                                      1;
+/google-maps-api-parte-1-apresentando                                                                         1;
+/google-maps-api-parte-2-comecando                                                                            1;
+/integracao-com-o-facebook-open-graph                                                                         1;
+/integracao-com-o-facebook-wordpress                                                                          1;
+/its-me-mario-2-0-o-que-e-o-material-design                                                                   1;
+/lista-de-links-para-web-designers                                                                            1;
+/novidades-is-coming                                                                                          1;
+/o-que-e-alphabet                                                                                             1;
+/os-10-mandamentos-do-array-da-programacao                                                                    1;
+/palestra-introducao-ao-desenvolvimento-para-android                                                          1;
+/pegando-as-fotos-de-todos-os-usuarios-do-facebook                                                            1;
+/pesquisa-vamos-falar-de-cinema                                                                               1;
+/robots-txt-do-site-do-guns                                                                                   1;
+/sublime-text-como-minificar-meus-arquivos-automaticamente                                                    1;
+/trello-chega-ao-brasil                                                                                       1;
+/coisas-que-ninguem-le                                                                                        1;
+/contato                                                                                                      1;
+/formulario-de-teste-1                                                                                        1;
+/formulario-de-teste-2                                                                                        1;
+/google-apps                                                                                                  1;
+/mc4wp-form-preview                                                                                           1;
+/pague-um-cafe                                                                                                1;
+/perguntas                                                                                                    1;
+/wordpress-em-5-minutos                                                                                       1;
