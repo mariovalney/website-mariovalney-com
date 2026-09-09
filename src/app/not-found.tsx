@@ -1,3 +1,4 @@
+import { Analytics } from '@/components/analytics'
 import { Container } from '@/components/ui/container'
 import { SITE } from '@/lib/site'
 import '@/styles/globals.css'
@@ -12,6 +13,10 @@ import '@/styles/globals.css'
  * export's 404 at all. The stylesheet import below is what puts the site's CSS in that document.
  *
  * Both languages appear in the copy because an unmatched address gives no hint which was wanted.
+ *
+ * It carries the analytics tag of its own, since no layout above it can. The site has exactly two
+ * real pages, so any other address in the Plausible Pages report is a 404 by definition, and the
+ * ordinary script is enough to read them. The instance does not build script.404.js anyway.
  */
 export const metadata = {
   title: `404 · ${SITE.name}`,
@@ -32,6 +37,7 @@ export default function NotFound() {
           {SITE.name}
         </a>
       </p>
+      <Analytics />
     </Container>
   )
 }

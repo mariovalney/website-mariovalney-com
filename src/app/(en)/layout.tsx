@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { Analytics } from '@/components/analytics'
 import { inter } from '@/lib/fonts'
 import { siteViewport } from '@/lib/metadata'
 import '@/styles/globals.css'
@@ -9,7 +10,10 @@ export const viewport = siteViewport
 export default function EnglishLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }

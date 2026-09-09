@@ -1,19 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mário Valney">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MV, Mário Valney">
   <!--
-    Placeholder mark, so the browser tab is not an empty page icon and /favicon.ico does not 404.
-    Replace it with the real logo, or drop a favicon.ico and an icon.png beside this file and
-    delete it. The fills are the accent and its foreground from src/styles/globals.css, repeated
-    here because an SVG asset cannot read a CSS custom property; the media query keeps the mark
-    legible on a dark tab strip, and browsers that ignore it fall back to the light values.
+    MV monogram, two stroked polylines rather than letterforms. A font cannot be relied on in a
+    file served on its own, and a filled letterform turns to mush at 16px, which is the size a
+    browser tab actually shows.
+    Round joins on purpose: at these angles a miter join shoots a spike out of each peak of the M
+    and out of the bottom of the V. Both letters sit inside a 7 unit margin on every side.
+    The colours are the accent and its foreground from src/styles/globals.css, repeated because an
+    SVG asset cannot read a CSS custom property; the media query keeps the mark legible on a dark
+    tab strip, and browsers that ignore it fall back to the light values.
   -->
   <style>
     .mark-bg { fill: #18181b; }
-    .mark-fg { fill: #fafafa; }
+    .mark-fg { stroke: #fafafa; }
     @media (prefers-color-scheme: dark) {
       .mark-bg { fill: #ebebef; }
-      .mark-fg { fill: #0b0b0d; }
+      .mark-fg { stroke: #0b0b0d; }
     }
   </style>
   <rect class="mark-bg" width="64" height="64" rx="14" />
-  <path class="mark-fg" d="M18 44V20h7.5l6.5 12 6.5-12H46v24h-7V32.5L33 44h-2l-6-11.5V44z" />
+  <g class="mark-fg" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="10,45 10,19 19,33 28,19 28,45" />
+    <polyline points="36,19 45,45 54,19" />
+  </g>
 </svg>
