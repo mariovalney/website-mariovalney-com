@@ -99,8 +99,8 @@ export const ptBR: SiteContent = {
   },
 
   projects: {
-    id: 'projetos',
-    heading: 'Projetos',
+    id: 'open-source',
+    heading: 'Open Source',
     entries: [
       {
         name: 'CF7 to Webhook',
