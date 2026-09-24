@@ -17,11 +17,11 @@ pnpm preview          # serves out/ exactly as nginx will, on http://localhost:3
 ## Structure
 
 ```
-src/app/(pt)/       the Portuguese site, at /
-src/app/(en)/en/    the English site, at /en
+src/app/(pt)/       the Portuguese site, at / and /privacidade
+src/app/(en)/en/    the English site, at /en and /en/privacy
 src/app/            not-found.tsx, sitemap.ts, robots.ts, icon.svg (placeholder mark)
 src/content/        every string on the page, one file per language, one shared type
-src/components/     portfolio.tsx (the page), site-nav.tsx (scroll spy), entry-list.tsx
+src/components/     portfolio.tsx (the home page), legal-page.tsx (privacy), site-nav.tsx
 src/lib/site.ts     name, URL, locales, THEME_COLOR
 src/lib/routes.ts   route discovery that feeds the sitemap
 src/styles/         globals.css, every colour in the project
@@ -39,7 +39,9 @@ renaming a section renames its anchor and its navigation entry together.
 
 **A new page** is `src/app/(pt)/<path>/page.tsx` with an exported `metadata`, mirrored under
 `src/app/(en)/en/<path>/`. The sitemap needs no edit: it reads the route tree from disk at build
-time, and `pnpm verify` fails if an exported page is missing from it.
+time, and `pnpm verify` fails if an exported page is missing from it. Because the slug is copy and
+translates, the pair of routes goes in `src/lib/site.ts` (`PRIVACY_ROUTES` is the example) and is
+handed to `metadataFor()`, which is what makes the canonical URL and the hreflang tags agree.
 
 **A redirect** goes in `nginx/legacy-redirects.map` or `nginx/legacy-gone.map`, never in
 `next.config.ts`: a static export has no server to run `redirects()`. Keys carry no trailing slash,

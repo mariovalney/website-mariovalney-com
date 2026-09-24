@@ -119,6 +119,104 @@ export const en: SiteContent = {
     ],
   },
 
+  privacy: {
+    meta: {
+      title: 'Privacy Policy · Mário Valney',
+      description:
+        'What this site collects: aggregate audience numbers through Plausible, no cookies, and only the data a sign-in actually needs.',
+    },
+    linkLabel: 'Privacy',
+    heading: 'Privacy Policy',
+    updated: 'Last updated in September 2026',
+    intro: [
+      'This site is static: no database, no session, no account required to read it. Browsing still produces some data, and this page says what that data is, why it exists and what you can ask about it.',
+      'It covers mariovalney.com and the projects I publish under this domain. Where a project has rules of its own, they live on that project page and take precedence over this one.',
+    ],
+    sections: [
+      {
+        heading: 'Who handles the data',
+        paragraphs: [
+          'Mário Valney, as an individual, responsible for this site and for the projects published on it. Requests about personal data go to the address at the end of this page.',
+        ],
+      },
+      {
+        heading: 'What browsing collects',
+        paragraphs: [
+          'Audience measurement only, in aggregate numbers. None of it identifies you individually and there is no visitor profile.',
+        ],
+        items: [
+          'The address requested and the time of the request',
+          'Where the visit came from, meaning the site or the search that led here',
+          'Country, derived from the IP address at the time of the request',
+          'Device type, operating system and browser',
+        ],
+      },
+      {
+        heading: 'Analytics',
+        paragraphs: [
+          'Measurement runs on Plausible Analytics, on an instance I host myself. The numbers stay with me and go to no ad network and no data broker.',
+          'Plausible writes no cookies and builds no persistent visitor identifier. The IP address is used only to derive the country and is not stored.',
+        ],
+      },
+      {
+        heading: 'Cookies',
+        paragraphs: [
+          'This site writes no cookies of its own and none from third parties, which is why there is no consent banner: there is nothing to consent to. If a project published here needs a cookie, it will be the one strictly required to keep you signed in, and it will be described on that project page.',
+        ],
+      },
+      {
+        heading: 'Sign-in and accounts',
+        paragraphs: [
+          'Not every project has a sign-in. Where one does, I collect only what it takes to authenticate you and reach you: usually the email address and the name, received from the identity provider when you choose to sign in with Google.',
+          'Your password never passes through me, and the access requested from the provider stops at the basic profile and the email address. Contacts, files and calendars stay out of it.',
+        ],
+      },
+      {
+        heading: 'Why the data is handled',
+        paragraphs: [
+          'Aggregate audience numbers exist so I can tell what gets read and what needs work, on the legitimate interest basis of the Brazilian data protection law (LGPD).',
+          'Sign-in data exists to create and keep your account, on the performance of contract basis, and to meet legal obligations where they apply.',
+        ],
+      },
+      {
+        heading: 'Sharing',
+        paragraphs: [
+          'I do not sell, rent or trade personal data. Sharing is limited to the providers that keep the operation running, such as hosting and the identity provider, and to authorities under a legal order.',
+        ],
+      },
+      {
+        heading: 'How long data is kept',
+        paragraphs: [
+          'Aggregate statistics are kept while they are still useful for comparing periods. Account data lasts as long as the account and is deleted afterwards, except for what the law requires me to keep.',
+        ],
+      },
+      {
+        heading: 'Your rights',
+        paragraphs: [
+          'The LGPD grants confirmation of processing, access, correction, anonymisation, portability, deletion and withdrawal of consent. To exercise any of them, write to the address below. I answer within 15 days.',
+        ],
+      },
+      {
+        heading: 'Security',
+        paragraphs: [
+          'The site is served over HTTPS only. Where there is a sign-in, authentication stays with the identity provider, which is what keeps passwords from being stored here.',
+        ],
+      },
+      {
+        heading: 'Changes',
+        paragraphs: [
+          'This policy can change. The date at the top is the last revision, and the full history of the changes is public in the repository of this site.',
+        ],
+      },
+    ],
+    contact: {
+      heading: 'Contact',
+      paragraph: 'Questions, requests about your data, or a correction to this page:',
+      email: 'mariovalney@gmail.com',
+    },
+    backLabel: 'Back to the home page',
+  },
+
   socials: [
     { label: 'GitHub', href: 'https://github.com/mariovalney', icon: 'github' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mariovalney/', icon: 'linkedin' },

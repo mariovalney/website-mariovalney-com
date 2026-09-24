@@ -122,6 +122,104 @@ export const ptBR: SiteContent = {
     ],
   },
 
+  privacy: {
+    meta: {
+      title: 'Política de Privacidade · Mário Valney',
+      description:
+        'O que este site coleta: audiência agregada pelo Plausible, sem cookies, e apenas os dados necessários onde existe login.',
+    },
+    linkLabel: 'Privacidade',
+    heading: 'Política de Privacidade',
+    updated: 'Atualizada em setembro de 2026',
+    intro: [
+      'Este site é estático: não tem banco de dados, não cria sessão e não pede cadastro para ser lido. Ainda assim, navegar por aqui gera alguns dados, e esta página diz quais são, por que existem e o que você pode pedir sobre eles.',
+      'O texto vale para mariovalney.com e para os projetos que eu publico sob este domínio. Quando um projeto tiver regra própria, ela fica na página dele e prevalece sobre esta.',
+    ],
+    sections: [
+      {
+        heading: 'Quem trata os dados',
+        paragraphs: [
+          'Mário Valney, pessoa física, responsável por este site e pelos projetos publicados nele. Pedidos sobre dados pessoais chegam pelo e-mail no fim desta página.',
+        ],
+      },
+      {
+        heading: 'O que é coletado na navegação',
+        paragraphs: [
+          'Somente medição de audiência, em números agregados. Nada disso identifica você individualmente e não existe perfil de visitante.',
+        ],
+        items: [
+          'Endereço acessado e horário do acesso',
+          'Origem da visita, ou seja, o site ou a busca que trouxe você até aqui',
+          'País, derivado do endereço IP no momento do acesso',
+          'Tipo de dispositivo, sistema operacional e navegador',
+        ],
+      },
+      {
+        heading: 'Analytics',
+        paragraphs: [
+          'A medição usa o Plausible Analytics em instância própria, hospedada por mim. Os números ficam comigo e não são enviados a redes de anúncios nem a corretores de dados.',
+          'O Plausible não grava cookies e não cria identificador persistente do visitante. O endereço IP é usado apenas para derivar o país e não é armazenado.',
+        ],
+      },
+      {
+        heading: 'Cookies',
+        paragraphs: [
+          'Este site não grava cookies próprios nem de terceiros, e por isso não exibe banner de consentimento: não há o que consentir. Se um projeto publicado aqui precisar de cookie, será o estritamente necessário para manter você conectado, e estará descrito na página do projeto.',
+        ],
+      },
+      {
+        heading: 'Login e conta',
+        paragraphs: [
+          'Nem todo projeto tem login. Onde tiver, eu coleto apenas o necessário para autenticar e falar com você: em geral o e-mail e o nome, recebidos do provedor de identidade quando você escolhe entrar com o Google.',
+          'Sua senha nunca passa por mim, e o acesso pedido ao provedor se limita ao perfil básico e ao e-mail. Contatos, arquivos e agenda ficam de fora.',
+        ],
+      },
+      {
+        heading: 'Por que os dados são tratados',
+        paragraphs: [
+          'A audiência agregada existe para eu entender o que é lido e o que precisa melhorar, com base no legítimo interesse previsto na LGPD.',
+          'Os dados de login existem para criar e manter a sua conta, com base na execução do contrato de uso do serviço, e para cumprir obrigação legal quando houver.',
+        ],
+      },
+      {
+        heading: 'Compartilhamento',
+        paragraphs: [
+          'Não vendo, não alugo e não troco dados pessoais. O compartilhamento se limita aos prestadores que sustentam a operação, como hospedagem e provedor de identidade, e às autoridades quando houver ordem legal.',
+        ],
+      },
+      {
+        heading: 'Por quanto tempo os dados ficam',
+        paragraphs: [
+          'As estatísticas agregadas ficam guardadas enquanto servirem para comparar períodos. Dados de conta duram enquanto a conta existir e são apagados depois, salvo o que a lei obrigar a manter.',
+        ],
+      },
+      {
+        heading: 'Seus direitos',
+        paragraphs: [
+          'A LGPD garante confirmação do tratamento, acesso, correção, anonimização, portabilidade, eliminação e revogação do consentimento. Para exercer qualquer um deles, basta escrever para o e-mail abaixo. Respondo em até 15 dias.',
+        ],
+      },
+      {
+        heading: 'Segurança',
+        paragraphs: [
+          'O site é servido apenas por HTTPS. Onde existe login, a autenticação fica com o provedor de identidade, o que evita guardar senha aqui.',
+        ],
+      },
+      {
+        heading: 'Alterações',
+        paragraphs: [
+          'Esta política pode mudar. A data no topo indica a última revisão, e o histórico completo das mudanças é público no repositório do site.',
+        ],
+      },
+    ],
+    contact: {
+      heading: 'Contato',
+      paragraph: 'Dúvida, pedido sobre seus dados ou correção nesta página:',
+      email: 'mariovalney@gmail.com',
+    },
+    backLabel: 'Voltar para a página inicial',
+  },
+
   socials: [
     { label: 'GitHub', href: 'https://github.com/mariovalney', icon: 'github' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mariovalney/', icon: 'linkedin' },

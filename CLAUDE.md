@@ -10,12 +10,12 @@ own language.
 ## Structure
 
 ```
-src/app/(pt)/       root layout and page for pt-BR, served at /
-src/app/(en)/en/    root layout and page for English, served at /en
+src/app/(pt)/       root layout and pages for pt-BR, served at / and /privacidade
+src/app/(en)/en/    root layout and pages for English, served at /en and /en/privacy
 src/app/            not-found.tsx, sitemap.ts, robots.ts, icon.svg (placeholder mark)
 src/content/        types.ts plus one dictionary per language: every string the page renders
-src/components/     portfolio.tsx, site-nav.tsx (the only client component), entry-list.tsx
-src/lib/site.ts     name, URL, LOCALES, THEME_COLOR
+src/components/     portfolio.tsx, legal-page.tsx, site-nav.tsx (the only client component)
+src/lib/site.ts     name, URL, LOCALES, the route pair of each page, THEME_COLOR
 src/lib/routes.ts   build-time route discovery, feeds the sitemap
 src/styles/         globals.css, the only file with colour literals
 nginx/              default.conf, plus the legacy redirect and gone maps it includes
@@ -47,7 +47,8 @@ pnpm preview    # serves out/ the way nginx does, after a build
   contrast, not from a second hue.
 - **Export `metadata` from every page**, built with `metadataFor()` in `src/lib/metadata.ts` so the
   canonical URL, the hreflang pair and the Open Graph locale stay consistent between the two
-  languages.
+  languages. A page other than the home one declares its route in each language in `src/lib/site.ts`
+  (`PRIVACY_ROUTES`) and hands that pair to `metadataFor()`, because the slug is copy and translates.
 - **Run `pnpm verify` before calling a task done.** It fails when a page is missing from the
   sitemap, which is the mistake that otherwise reaches production unnoticed.
 - **Put every string in `src/content/`**, never inline in a component, and add it to both
