@@ -57,14 +57,34 @@ export function otherLocale(locale: Locale): Locale {
 }
 
 /**
- * hreflang, identical on both pages: each one points at itself and at its translation. pt-BR is
- * the x-default because it sits at the root and is what the domain is for.
+ * A page that exists in both languages: the route each locale serves it at. The home pair comes
+ * from LOCALES; every other page declares its own, because a slug is copy and translates along
+ * with the rest of the page.
  */
-export const LANGUAGE_ALTERNATES = {
+export type LocaleRoutes = Record<Locale, string>
+
+export const HOME_ROUTES: LocaleRoutes = {
   'pt-BR': LOCALES['pt-BR'].path,
   en: LOCALES.en.path,
-  'x-default': LOCALES['pt-BR'].path,
-} as const
+}
+
+/** The privacy policy, the same document under a slug per language. */
+export const PRIVACY_ROUTES: LocaleRoutes = {
+  'pt-BR': '/privacidade',
+  en: '/en/privacy',
+}
+
+/**
+ * hreflang for a page, identical on both of its versions: each one points at itself and at its
+ * translation. pt-BR is the x-default because it sits at the root and is what the domain is for.
+ */
+export function languageAlternates(routes: LocaleRoutes): Record<string, string> {
+  return {
+    'pt-BR': routes['pt-BR'],
+    en: routes.en,
+    'x-default': routes['pt-BR'],
+  }
+}
 
 /**
  * The only literal colours outside src/styles/globals.css. The browser reads them from a meta tag

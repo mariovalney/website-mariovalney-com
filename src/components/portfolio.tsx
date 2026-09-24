@@ -4,7 +4,7 @@ import { SiteNav } from '@/components/site-nav'
 import { Container } from '@/components/ui/container'
 import { SocialIcon } from '@/components/ui/social-icon'
 import type { Section, SiteContent } from '@/content/types'
-import { LOCALES, otherLocale, SITE } from '@/lib/site'
+import { LOCALES, otherLocale, PRIVACY_ROUTES, SITE } from '@/lib/site'
 
 /**
  * The whole page, for either language. The two routes differ only in the dictionary they hand in,
@@ -147,6 +147,16 @@ export function Portfolio({ content }: { content: SiteContent }) {
                 node instead of splitting it with <!-- --> separators. The closing year is the
                 build year, which moves on every deploy. */}
             <p>{`${SITE.copyrightFrom}-${new Date().getFullYear()} © ${content.hero.name}`}</p>
+            {/* The only way in to the privacy policy: it is deliberately out of the section
+                navigation, which lists what the page itself scrolls through. */}
+            <p className="mt-2">
+              <a
+                href={PRIVACY_ROUTES[content.locale]}
+                className="underline underline-offset-4 transition-colors hover:text-fg-primary"
+              >
+                {content.privacy.linkLabel}
+              </a>
+            </p>
           </footer>
         </main>
       </div>

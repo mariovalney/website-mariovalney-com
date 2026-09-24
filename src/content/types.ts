@@ -44,6 +44,33 @@ export interface Section {
   heading: string
 }
 
+/** One numbered block of a legal page. The number comes from the position in the list. */
+export interface LegalSection {
+  heading: string
+  paragraphs: string[]
+  /** Rendered as a bulleted list under the paragraphs, where the section enumerates. */
+  items?: string[]
+}
+
+/**
+ * A page of prose with legal weight: the privacy policy today, whatever joins it later. It carries
+ * its own head copy because its title and description have nothing to do with the portfolio's, and
+ * the route it is served at lives in `src/lib/site.ts`, since the slug differs per language.
+ */
+export interface LegalPageContent {
+  meta: { title: string; description: string }
+  /** Short form, for the link in the footer of the home page. */
+  linkLabel: string
+  heading: string
+  /** The last revision, written out. The git history of this file is the long version. */
+  updated: string
+  intro: string[]
+  sections: LegalSection[]
+  /** The address a data subject request goes to, rendered as the closing section. */
+  contact: { heading: string; paragraph: string; email: string }
+  backLabel: string
+}
+
 export interface SiteContent {
   locale: Locale
   meta: { title: string; description: string }
@@ -51,6 +78,7 @@ export interface SiteContent {
   about: Section & { paragraphs: string[] }
   experience: Section & { entries: ExperienceEntry[] }
   projects: Section & { entries: ProjectEntry[] }
+  privacy: LegalPageContent
   socials: SocialLink[]
   ui: {
     skipToContent: string
